@@ -59,3 +59,8 @@ git rm -r --cached wms=reports/report-service/target
 git rm -r --cached wms=reports/report-core/target
 git rm -r --cached wms=reports/report-client/target
 git commit -m "[REMOVE] wms-reports target directory unversioned"
+
+# Remove .classpath files from wms-process
+git rm -r --cached wms-process/process-exception/.classpath
+git rm -r --cached wms-process/process-pack/.classpath
+git rm -r --cached wms-process/process-put-notification/.classpath
