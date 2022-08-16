@@ -44,3 +44,10 @@ echo Fetching
 git fetch --all --no-tags
 
 bash ../monorepo_build.sh "${repo_list[@]}"
+
+git remote add github https://github.com/greyorange/platform-test
+
+cp -R "../platform_scripts/*" "."
+
+echo "Github handle is named as 'github'"
+echo "Push: git push github <branch-name>"
