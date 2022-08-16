@@ -5,9 +5,9 @@ repo_list=(
     wms-common
     wms-serviceregistry
     wms-configserver
-    # wms-gateway
+    api-gateway
     wms-integration
-    # gor-platform
+    gor-platform-auth
     wms-storage
     wms-masterdata
     wms-resource
