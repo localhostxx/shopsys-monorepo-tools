@@ -16,8 +16,6 @@ repo_list=(
     wms-process
     gor-platform-utils
     dashboard-bff
-    gor-platform-inventory
-    gor-platform-transformer
     validation_engine
     wms-reports
     wms-billing
@@ -64,3 +62,4 @@ git commit -m "[REMOVE] wms-reports target directory unversioned"
 git rm -r --cached wms-process/process-exception/.classpath
 git rm -r --cached wms-process/process-pack/.classpath
 git rm -r --cached wms-process/process-put-notification/.classpath
+git commit -m "[REMOVE] wms-process .classpath unversioned"
