@@ -47,7 +47,15 @@ bash ../monorepo_build.sh "${repo_list[@]}"
 
 git remote add github https://github.com/greyorange/platform-test
 
+# Add platform scripts
 cp -R "../platform_scripts/*" "."
+git commit -m "[ADD] platform scripts"
 
 echo "Github handle is named as 'github'"
 echo "Push: git push github <branch-name>"
+
+# Remove wms-reports target directory 
+git rm -r --cached wms=reports/report-service/target
+git rm -r --cached wms=reports/report-core/target
+git rm -r --cached wms=reports/report-client/target
+git commit -m "[REMOVE] wms-reports target directory unversioned"
